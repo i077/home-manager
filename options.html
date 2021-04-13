@@ -2459,6 +2459,18 @@ available packages run:
 };
 </pre><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/emacs.nix#blob-path" target="_top">
                     &lt;home-manager/modules/programs/emacs.nix&gt;
+                </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.exa.enable"></a><a class="term" href="options.html#opt-programs.exa.enable"><code class="option">programs.exa.enable</code></a></span></dt><dd><p>Whether to enable exa, a modern replacement for <span class="command"><strong>ls</strong></span>.</p><p><span class="emphasis"><em>Type:</em></span> boolean</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
+        false
+      </code></p><p><span class="emphasis"><em>Example:</em></span> <code class="literal">
+        true
+      </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/exa.nix#blob-path" target="_top">
+                    &lt;home-manager/modules/programs/exa.nix&gt;
+                </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.exa.enableAliases"></a><a class="term" href="options.html#opt-programs.exa.enableAliases"><code class="option">programs.exa.enableAliases</code></a></span></dt><dd><p>Whether to enable recommended exa aliases.</p><p><span class="emphasis"><em>Type:</em></span> boolean</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
+        false
+      </code></p><p><span class="emphasis"><em>Example:</em></span> <code class="literal">
+        true
+      </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/exa.nix#blob-path" target="_top">
+                    &lt;home-manager/modules/programs/exa.nix&gt;
                 </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.feh.enable"></a><a class="term" href="options.html#opt-programs.feh.enable"><code class="option">programs.feh.enable</code></a></span></dt><dd><p>Whether to enable feh - a fast and light image viewer.</p><p><span class="emphasis"><em>Type:</em></span> boolean</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
         false
       </code></p><p><span class="emphasis"><em>Example:</em></span> <code class="literal">
@@ -4915,7 +4927,7 @@ control the default matplotlib behavior.
                     &lt;home-manager/modules/programs/mpv.nix&gt;
                 </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.mpv.package"></a><a class="term" href="options.html#opt-programs.mpv.package"><code class="option">programs.mpv.package</code></a></span></dt><dd><p>Package providing mpv.
 </p><p><span class="emphasis"><em>Type:</em></span> package</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
-        <em class="replaceable"><code>(build of mpv-with-scripts-0.33.0)</code></em>
+        <em class="replaceable"><code>(build of mpv-with-scripts-0.33.1)</code></em>
       </code></p><p><span class="emphasis"><em>Example:</em></span> </p><pre class="programlisting">pkgs.wrapMpv (pkgs.mpv-unwrapped.override { vapoursynthSupport = true; }) { youtubeSupport = true; }</pre><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/mpv.nix#blob-path" target="_top">
                     &lt;home-manager/modules/programs/mpv.nix&gt;
                 </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.mpv.bindings"></a><a class="term" href="options.html#opt-programs.mpv.bindings"><code class="option">programs.mpv.bindings</code></a></span></dt><dd><p>Input configuration written to
@@ -5002,6 +5014,12 @@ by options set in <a class="xref" href="options.html#opt-programs.mpv.config"><c
         false
       </code></p><p><span class="emphasis"><em>Example:</em></span> <code class="literal">
         true
+      </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/msmtp.nix#blob-path" target="_top">
+                    &lt;home-manager/modules/programs/msmtp.nix&gt;
+                </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.msmtp.extraAccounts"></a><a class="term" href="options.html#opt-programs.msmtp.extraAccounts"><code class="option">programs.msmtp.extraAccounts</code></a></span></dt><dd><p>Extra configuration lines to add to the end of <code class="filename">~/.msmtprc</code>.
+See <a class="link" href="https://marlam.de/msmtp/msmtprc.txt" target="_top">https://marlam.de/msmtp/msmtprc.txt</a> for examples.
+</p><p><span class="emphasis"><em>Type:</em></span> strings concatenated with "\n"</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
+        ""
       </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/msmtp.nix#blob-path" target="_top">
                     &lt;home-manager/modules/programs/msmtp.nix&gt;
                 </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.msmtp.extraConfig"></a><a class="term" href="options.html#opt-programs.msmtp.extraConfig"><code class="option">programs.msmtp.extraConfig</code></a></span></dt><dd><p>Extra configuration lines to add to <code class="filename">~/.msmtprc</code>.
@@ -11420,7 +11438,9 @@ on workspace with a single container.
         5
       </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/services/window-managers/i3-sway/sway.nix#blob-path" target="_top">
                     &lt;home-manager/modules/services/window-managers/i3-sway/sway.nix&gt;
-                </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-wayland.windowManager.sway.config.input"></a><a class="term" href="options.html#opt-wayland.windowManager.sway.config.input"><code class="option">wayland.windowManager.sway.config.input</code></a></span></dt><dd><p>An attribute set that defines input modules. See man sway_input for options.
+                </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-wayland.windowManager.sway.config.input"></a><a class="term" href="options.html#opt-wayland.windowManager.sway.config.input"><code class="option">wayland.windowManager.sway.config.input</code></a></span></dt><dd><p>An attribute set that defines input modules. See
+<span class="citerefentry"><span class="refentrytitle">sway-input</span>(5)</span>
+for options.
 </p><p><span class="emphasis"><em>Type:</em></span> attribute set of attribute set of stringss</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
         
         {
@@ -11504,7 +11524,9 @@ for more advanced setup use 'sway.extraConfig'.
         "Mod4"
       </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/services/window-managers/i3-sway/sway.nix#blob-path" target="_top">
                     &lt;home-manager/modules/services/window-managers/i3-sway/sway.nix&gt;
-                </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-wayland.windowManager.sway.config.output"></a><a class="term" href="options.html#opt-wayland.windowManager.sway.config.output"><code class="option">wayland.windowManager.sway.config.output</code></a></span></dt><dd><p>An attribute set that defines output modules. See man sway_output for options.
+                </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-wayland.windowManager.sway.config.output"></a><a class="term" href="options.html#opt-wayland.windowManager.sway.config.output"><code class="option">wayland.windowManager.sway.config.output</code></a></span></dt><dd><p>An attribute set that defines output modules. See
+<span class="citerefentry"><span class="refentrytitle">sway-output</span>(5)</span>
+for options.
 </p><p><span class="emphasis"><em>Type:</em></span> attribute set of attribute set of stringss</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
         
         {
@@ -11525,6 +11547,27 @@ for more advanced setup use 'sway.extraConfig'.
                     &lt;home-manager/modules/services/window-managers/i3-sway/sway.nix&gt;
                 </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-wayland.windowManager.sway.config.right"></a><a class="term" href="options.html#opt-wayland.windowManager.sway.config.right"><code class="option">wayland.windowManager.sway.config.right</code></a></span></dt><dd><p>Home row direction key for moving right.</p><p><span class="emphasis"><em>Type:</em></span> string</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
         "l"
+      </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/services/window-managers/i3-sway/sway.nix#blob-path" target="_top">
+                    &lt;home-manager/modules/services/window-managers/i3-sway/sway.nix&gt;
+                </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-wayland.windowManager.sway.config.seat"></a><a class="term" href="options.html#opt-wayland.windowManager.sway.config.seat"><code class="option">wayland.windowManager.sway.config.seat</code></a></span></dt><dd><p>An attribute set that defines seat modules. See
+<span class="citerefentry"><span class="refentrytitle">sway-input</span>(5)</span>
+for options.
+</p><p><span class="emphasis"><em>Type:</em></span> attribute set of attribute set of stringss</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
+        
+        {
+        
+        }
+    
+      </code></p><p><span class="emphasis"><em>Example:</em></span> <code class="literal">
+        
+        {
+        * = 
+        {
+        hide_cursor = "when-typing enable"; 
+        }
+    ; 
+        }
+    
       </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/services/window-managers/i3-sway/sway.nix#blob-path" target="_top">
                     &lt;home-manager/modules/services/window-managers/i3-sway/sway.nix&gt;
                 </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-wayland.windowManager.sway.config.startup"></a><a class="term" href="options.html#opt-wayland.windowManager.sway.config.startup"><code class="option">wayland.windowManager.sway.config.startup</code></a></span></dt><dd><p>Commands that should be executed at startup.
